@@ -1,0 +1,111 @@
+/* Refined Background Gradient */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2c3e50 30%, #34495e 100%); /* Dark gradient with more contrast */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Remove the background animation for now */
+body {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Static gradient */
+}
+
+/* Section Styling with Shadow and Hover Effects */
+.section {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px; /* Slightly smaller radius */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px 25px; /* Reduced padding */
+    backdrop-filter: blur(10px); /* More blur for a soft effect */
+    height: auto; /* Adjust based on content */
+    transition: all 0.3s ease-in-out;
+    opacity: 1; /* Ensure sections do not disappear */
+}
+
+/* Hover Effect for Sections */
+.section:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+/* About Me, Facts, and CV */
+.about-me, .coding, .quals {
+    padding: 20px 25px; /* Slightly reduced padding to make sections smaller */
+}
+
+/* Title Adjustments for Better Spacing */
+h1, h2 {
+    margin-bottom: 20px; /* Added bottom margin for more space */
+    font-size: 2.2rem; /* Slightly smaller font size for headings */
+    text-transform: uppercase; /* All uppercase text for headings */
+    letter-spacing: 2px; /* Slightly wider spacing between letters */
+    color: #4CAF50; /* Highlight color for headings */
+}
+
+/* Paragraphs inside sections */
+p {
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    line-height: 1.7; /* More space between lines */
+    color: rgba(255, 255, 255, 0.8); /* Slightly faded white text for contrast */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        grid-template-rows: auto; /* Automatically adjust row sizes */
+    }
+
+    .about-me, .coding, .quals {
+        margin: 20px 0; /* Spacing between sections on mobile */
+        padding: 15px 20px; /* Reduced padding for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.8rem; /* Smaller font for headings on mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Slightly smaller paragraph text */
+    }
+}
+
+/* Add subtle animation to the header and footer */
+header:hover, footer:hover {
+    transform: scale(1.03); /* Slightly enlarge the header/footer */
+    transition: all 0.3s ease;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(76, 175, 80, 0.85); /* Transparent green background */
+    color: white;
+    padding: 20px 40px; /* Increased padding */
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(76, 175, 80, 0.85); /* Same as header */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Refined Footer Hover Effect */
+footer:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
